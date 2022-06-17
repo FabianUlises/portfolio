@@ -10,7 +10,6 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: paleturquoise;
     font-size: 2.6rem;
     font-family: 'Arimo', sans-serif;
 }
@@ -34,7 +33,7 @@ header {
 /* Start of nav styles */
 nav {
     flex: 0 0 auto;
-    position: fixed;
+/*    position: fixed;*/
     background-color: orange;
     width: 100%;
     z-index: 10;
@@ -44,5 +43,18 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+.btn {
+    padding: 4px;
+    display: inline-block;
+    align-self: center;
+    border: 2px solid purple;
+}
 /* End of nav styles */
+/* Start of banner styles */
+.banner {
+    display: flex;
+    flex: 1 0 auto;
+    
+}
+/* End of banner styles */
 /* End of header styles */
