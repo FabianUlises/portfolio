@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body {
+    background-color: paleturquoise;
+}
