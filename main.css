@@ -111,12 +111,12 @@ nav ul a:hover {
     text-transform: uppercase;
     font-weight: 100;
     color: #ede4de;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 #banner-link {
     display: inline-block;
     width: 75%;
-    margin: 0 auto 15px;
+    margin: 0 auto 30px;
     transition: all .5s ease;
     color: #ede4de;
 }
@@ -131,6 +131,16 @@ nav ul a:hover {
     width: 50%;
     margin: auto;
     font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-icons a {
+    display: inline-block;
+    transition: all 1s ease;
+}
+.banner-icons a:hover {
+    color: #ede4de;
+    transform: translateY(-10px);
 }
     /* End of banner styles */
 /* End of header styles */
