@@ -246,4 +246,14 @@ nav ul a:hover {
         color: purple;
     }
 }
+
+@media screen and (min-width:1120px) {
+    .skills-center{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .skill-text {
+        color: azure;
+    }
+
+}
 /* End of skills section styles */
