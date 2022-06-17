@@ -63,6 +63,7 @@ nav {
         /* Start of nav link styles */
 nav ul {
     list-style-type: none;
+    display: none;
 }
 nav ul a {
     display: block;
@@ -115,15 +116,21 @@ nav ul a:hover {
 #banner-link {
     display: inline-block;
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 15px;
     transition: all .5s ease;
+    color: #ede4de;
 }
 #banner-link:hover {
-    color: #ede4de;
+    color: purple;
     transform: scale(1.02);
 }
 #banner-link:active {
     color: red;
+}
+.banner-icons {
+    width: 50%;
+    margin: auto;
+    font-size: 3rem;
 }
     /* End of banner styles */
 /* End of header styles */
