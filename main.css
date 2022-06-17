@@ -73,6 +73,21 @@ nav ul a {
     transition: all 1s ease;
     position: relative;
 }
+nav ul a::before {
+    content: '';
+    background-color: rebeccapurple;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: -10;
+    transition: all 1s ease;
+}
+nav ul a:hover::before {
+    width: 100%;
+    height: 3px;
+}
 nav ul a:hover {
     padding-left: 3.5rem;
     background: rgba(255, 255, 255,.1);
