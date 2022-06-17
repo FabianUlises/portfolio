@@ -114,11 +114,12 @@ nav ul a:hover {
     margin-bottom: 15px;
 }
 #banner-link {
+    color: #ede4de;
     display: inline-block;
     width: 75%;
     margin: 0 auto 30px;
     transition: all .5s ease;
-    color: #ede4de;
+    animation: moveInLeft 1s ease;
 }
 #banner-link:hover {
     color: purple;
@@ -137,10 +138,35 @@ nav ul a:hover {
 .banner-icons a {
     display: inline-block;
     transition: all 1s ease;
+    animation: fadeIn 1s ease;
 }
 .banner-icons a:hover {
     color: #ede4de;
     transform: translateY(-10px);
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
     /* End of banner styles */
 /* End of header styles */
