@@ -4,16 +4,22 @@
     padding: 0;
     box-sizing: inherit;
 }
+    /*html defaults    */
 html {
     overflow-x: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
 }
+    /* page defaults */
 body {
     font-size: 2.6rem;
     font-family: 'Arimo', sans-serif;
 }
-/* Burger menu bars*/
+    /* anchor defaults */
+a {
+    text-decoration: none;
+}
+    /* burger menu bars*/
 .bar {
     background-color: purple;
     height: 2px;
@@ -30,35 +36,31 @@ header {
     display: flex;
     flex-direction: column;
 }
-/* Start of nav styles */
+    /* start of nav styles */
 nav {
     flex: 0 0 auto;
     /*    position: fixed;*/
     width: 100%;
     z-index: 10;
 }
+    /* nav container for mobile */
 .nav-container {
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
+    /* mobile burger menu */
 .btn {
     padding: 4px;
     display: inline-block;
     align-self: center;
     border: 2px solid purple;
 }
+    /* burger menu hover state */
 .btn:hover {
     cursor: pointer;
 }
-/* End of nav styles */
-/* Start of banner styles */
-.banner {
-    display: flex;
-    flex: 1 0 auto;
-    
-}
-/* Start of nav link styles */
+    /* Start of nav link styles */
 nav ul {
     list-style-type: none;
 }
@@ -92,6 +94,23 @@ nav ul a:hover {
     padding-left: 3.5rem;
     background: rgba(255, 255, 255,.1);
 }
-/* End of nav link styles */
-/* End of banner styles */
+    /* End of nav link styles */
+    /* End of nav styles */
+    /* Start of banner styles */
+.banner {
+    color: purple;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+.banner h1 {
+    font-size: 4.3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #ede4de;
+    margin-bottom: 30px;
+}
+    /* End of banner styles */
 /* End of header styles */
