@@ -26,7 +26,7 @@ body {
 /* Start of header styles */
 header {
     min-height: 100vh;
-    background: url('/img/bg.jpg')center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.3)) ,url('/img/bg.jpg')center center/cover no-repeat;
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +34,6 @@ header {
 nav {
     flex: 0 0 auto;
     /*    position: fixed;*/
-    background-color: orange;
     width: 100%;
     z-index: 10;
 }
@@ -48,6 +47,9 @@ nav {
     display: inline-block;
     align-self: center;
     border: 2px solid purple;
+}
+.btn:hover {
+    cursor: pointer;
 }
 /* End of nav styles */
 /* Start of banner styles */
@@ -70,6 +72,10 @@ nav ul a {
     color: purple;
     transition: all 1s ease;
     position: relative;
+}
+nav ul a:hover {
+    padding-left: 3.5rem;
+    background: rgba(255, 255, 255,.1);
 }
 /* End of nav link styles */
 /* End of banner styles */
