@@ -169,4 +169,22 @@ nav ul a:hover {
     }
 }
     /* End of banner styles */
+/* Media queries */
+@media screen and (min-width:776px){
+    .nav-container{
+        display: none;
+    }
+    nav ul{
+        display: flex!important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner h1{
+        margin-bottom: 30px;
+    }
+    nav ul a:hover {
+        padding-left: 2rem;
+    }
+}
+
 /* End of header styles */
