@@ -10,9 +10,18 @@ html {
 }
 body {
     background-color: paleturquoise;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
+    font-family: 'Arimo', sans-serif;
+}
+.bar {
+    background-color: purple;
+    height: 2px;
+    width: 30px;
+    margin: 6px;
 }
 header {
     min-height: 100vh;
-    background-color: orchid;
+    background: url('/img/bg.jpg')center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
 }
