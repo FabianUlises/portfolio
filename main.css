@@ -188,3 +188,33 @@ nav ul a:hover {
 }
 
 /* End of header styles */
+/* Start of skills section styles */
+.skills {
+    min-height: 80vh;
+    background: url('img/filler.jpg')center/cover fixed no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.skill {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 40px;
+    border-bottom: 2px solid #fff;
+    
+}
+.skill-text {
+    align-self: center;
+}
+.skill-icon {
+    align-self: center;
+    font-size: 4rem;
+    border: 2px solid #fff;
+    padding: 3rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* End of skills section styles */
