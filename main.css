@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 /* Default Syles */
+:root {
+    --font-primary-color: #551a8b;
+    --font-secondary-color: #ede4de;
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@ html {
     overflow-x: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
+    background-color: black;
 }
     /* page defaults */
 body {
@@ -22,7 +27,7 @@ a {
 }
     /* burger menu bars*/
 .bar {
-    background-color: purple;
+    background-color: var(--font-primary-color);
     height: 2px;
     width: 30px;
     margin: 6px;
@@ -55,7 +60,7 @@ nav {
     padding: 4px;
     display: inline-block;
     align-self: center;
-    border: 2px solid purple;
+    border: 2px solid var(--font-primary-color);
 }
         /* burger menu hover state */
 .btn:hover {
@@ -72,7 +77,7 @@ nav ul a {
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
-    color: purple;
+    color: var(--font-primary-color);
     transition: all 1s ease;
     position: relative;
 }
@@ -99,7 +104,6 @@ nav ul a:hover {
     /* End of nav styles */
     /* Start of banner styles */
 .banner {
-    color: purple;
     display: flex;
     flex: 1 0 auto;
     justify-content: center;
@@ -110,7 +114,7 @@ nav ul a:hover {
     font-size: 4.3rem;
     text-transform: uppercase;
     font-weight: 100;
-    color: #ede4de;
+    color: var(--font-secondary-color);
     margin-bottom: 15px;
     animation: fadeIn 2s ease;
     font-family: 'Rock Salt', cursive;
@@ -129,7 +133,7 @@ nav ul a:hover {
     }
 }
 #banner-link {
-    color: #ede4de;
+    color: var(--font-secondary-color);
     display: inline-block;
     width: 75%;
     margin: 0 auto 30px;
@@ -137,7 +141,7 @@ nav ul a:hover {
     animation: moveInLeft 4s ease;
 }
 #banner-link:hover {
-    color: purple;
+    color: var(--font-primary-color);
     transform: scale(1.02);
 }
 #banner-link:active {
@@ -156,7 +160,7 @@ nav ul a:hover {
     animation: fadeIn 5s ease;
 }
 .banner-icons a:hover {
-    color: #ede4de;
+    color: var(--font-secondary-color);
     transform: translateY(-10px);
 }
 @keyframes moveInLeft {
@@ -207,7 +211,7 @@ nav ul a:hover {
 .skills {
     min-height: 80vh;
     background: url('img/filler.jpg')center/cover fixed no-repeat;
-    color: #fff;
+    color: var(--font-secondary-color);
     display: flex;
     align-items: center;
 }
@@ -226,7 +230,7 @@ nav ul a:hover {
     grid-gap: 20px;
     padding:  40px;
     text-align: center;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid var(--font-secondary-color);
     
     
 }
@@ -237,7 +241,7 @@ nav ul a:hover {
 .skill-icon {
     align-self: center;
     font-size: 4rem;
-    border: 2px solid #fff;
+    border: 2px solid var(--font-secondary-color);
     padding: 3rem;
     border-radius: 50%;
 }
@@ -258,7 +262,7 @@ nav ul a:hover {
         margin: 0 auto;
     }
     .skill-text {
-        color: purple;
+        color: var(--font-primary-color);
     }
 }
 
@@ -267,7 +271,7 @@ nav ul a:hover {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     .skill-text {
-        color: azure;
+        color: var(--font-secondary-color);
     }
 
 }
