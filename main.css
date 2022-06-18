@@ -227,12 +227,12 @@ nav ul a:hover {
     align-items: center;
 }
 .skills-center {
-    max-width: 85%;
+    width: 85%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
     justify-content: center;
-    grid-row-gap: 3.3rem; 
+    grid-row-gap: 3.3rem;
 }
 /* End of skills section */
