@@ -33,6 +33,9 @@ a:hover{
 a:active {
     color: inherit;
 }
+textarea {
+    resize: none;
+}
 
     /* burger menu bars*/
 .bar {
@@ -46,7 +49,8 @@ a:active {
 /* Start of page styles */
 /* Start of header styles */
 header {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 985px;
     background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.3)) ,url('./img/bg.jpg')center center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -63,7 +67,7 @@ nav {
 .nav-container {
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
         /* mobile burger menu */
 .btn {
@@ -239,8 +243,98 @@ nav ul a:hover {
 /* End of skills section */
 /* Start of contact section styles */
 #contact-banner {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/contact.jpg')center center/cover no-repeat;
     color: var(--font-secondary-color);
     font-size: 1.7rem
+}
+.contact-banner-center {
+    width: 100%;
+    padding: 8rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 3rem;
+    text-align: center;
+}
+.contact-banner-center h2{
+    padding: 1.3rem;
+}
+.contact-banner-center p {
+    letter-spacing: 1px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+#contact-banner-info {
+    margin-bottom: 3rem;
+}
+#contact-banner-form {
+    
+}
+#contact-banner-form h3 {
+    font-weight: lighter;
+    padding: 1.3rem;
+    font-family: 'Rock Salt';
+}
+#contact-banner-form input {
+    padding: .3rem .2rem;
+}
+
+#contact-banner-form .input-field{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#contact-banner-form input{
+    font-family: inherit;
+    color: purple;
+    border: none;
+    border-radius: 8px;
+}
+#contact-banner-form input:focus {
+    outline: none;
+}
+#contact-banner-form textarea {
+    border: none;
+    font-family: inherit;
+    padding: .2rem .4rem;
+    border-radius: 8px;
+}
+#contact-banner-form textarea:focus {
+    outline: none;
+}
+#contact-banner-form button{
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: purple;
+    border: none;
+}
+#contact-banner-form button:hover {
+    cursor: pointer;
+}
+#contact-banner-form button:active{
+    background-color: darkviolet;
+}
+#contact-banner-info .fa-user{
+    border-radius: 50%;
+    font-size: 65px;
+    color:purple;
+}
+#contact-banner-info img {
+    display: none;
+}
+@media screen and (min-width:796px) {
+    #contact-banner-info img {
+        display: block;
+        content: url('./img/me.jpg');
+        height: 200px;
+        border-radius: 15px;
+        margin: 0 auto 4rem
+    }
+    #contact-banner-info i {
+    display: none;
+}
 }
 /* End of contact section styles */
 /* Start of footer styles */
