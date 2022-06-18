@@ -237,6 +237,12 @@ nav ul a:hover {
     grid-row-gap: 3.3rem;
 }
 /* End of skills section */
+/* Start of contact section styles */
+#contact-banner {
+    color: var(--font-secondary-color);
+    font-size: 1.7rem
+}
+/* End of contact section styles */
 /* Start of footer styles */
 footer {
     color: var(--font-secondary-color);
