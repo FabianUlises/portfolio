@@ -243,9 +243,9 @@ nav ul a:hover {
 /* End of skills section */
 /* Start of contact section styles */
 #contact-banner {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/contact.jpg')center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     color: var(--font-secondary-color);
-    font-size: 1.7rem
+    font-size: 1.7rem;
 }
 .contact-banner-center {
     width: 100%;
@@ -265,9 +265,6 @@ nav ul a:hover {
 }
 #contact-banner-info {
     margin-bottom: 3rem;
-}
-#contact-banner-form {
-    
 }
 #contact-banner-form h3 {
     font-weight: lighter;
@@ -327,14 +324,14 @@ nav ul a:hover {
 @media screen and (min-width:796px) {
     #contact-banner-info img {
         display: block;
-        content: url('./img/me.jpg');
+/*        content: url('./img/me.jpg');*/
         height: 200px;
         border-radius: 15px;
-        margin: 0 auto 4rem
+        margin: 0 auto 4rem;
     }
     #contact-banner-info i {
-    display: none;
-}
+        display: none;
+    }
 }
 /* End of contact section styles */
 /* Start of footer styles */
