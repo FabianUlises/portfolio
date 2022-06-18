@@ -3,6 +3,7 @@
 :root {
     --font-primary-color: #551a8b;
     --font-secondary-color: #ede4de;
+    --font-sm-size: 1.3rem;
 }
 * {
     margin: 0;
@@ -236,3 +237,10 @@ nav ul a:hover {
     grid-row-gap: 3.3rem;
 }
 /* End of skills section */
+/* Start of footer styles */
+footer {
+    color: var(--font-secondary-color);
+    font-size: var(--font-sm-size);
+    text-align: right;
+}
+/* End of footer styles */
