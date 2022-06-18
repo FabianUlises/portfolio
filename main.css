@@ -325,7 +325,7 @@ nav ul a:hover {
 @media screen and (min-width:796px) {
     #contact-banner-info img {
         display: block;
-/*        content: url('./img/me.jpg');*/
+        content: url("./img/me.jpg");
         height: 200px;
         border-radius: 15px;
         margin: 0 auto 4rem;
