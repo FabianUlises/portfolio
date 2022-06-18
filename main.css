@@ -244,7 +244,7 @@ nav ul a:hover {
 /* End of skills section */
 /* Start of contact section styles */
 #contact-banner {
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/contact.jpg')center center/cover no-repeat;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url('img/contact.jpg')center/cover fixed no-repeat;
     color: var(--font-secondary-color);
     font-size: 1.7rem;
 }
