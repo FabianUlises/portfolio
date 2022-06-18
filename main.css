@@ -323,6 +323,7 @@ nav ul a:hover {
     display: none;
 }
 @media screen and (min-width:796px) {
+/*
     #contact-banner-info img {
         display: block;
         content: url("./img/me.jpg");
@@ -330,6 +331,7 @@ nav ul a:hover {
         border-radius: 15px;
         margin: 0 auto 4rem;
     }
+*/
     #contact-banner-info i {
         display: none;
     }
