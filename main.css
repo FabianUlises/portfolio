@@ -331,7 +331,7 @@ nav ul a:hover {
         content: url('./img/me.jpg');
         height: 200px;
         border-radius: 15px;
-        margin: 0 auto 4rem
+        margin: 0 auto 4rem;
     }
     #contact-banner-info i {
     display: none;
