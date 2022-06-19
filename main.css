@@ -244,7 +244,7 @@ nav ul a:hover {
 /* End of skills section */
 /* Start of contact section styles */
 #contact-banner {
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('./img/contact.jpg')center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('./img/contact.jpg')center center/cover no-repeat;
     color: var(--font-secondary-color);
     font-size: 1.7rem;
 }
@@ -321,6 +321,10 @@ nav ul a:hover {
 }
 #contact-banner-info img {
     height: 200px;
+}
+#contact-banner-form h2 {
+    color: red;
+    font-weight: bold;
 }
 /*
 @media screen and (min-width:796px) {
