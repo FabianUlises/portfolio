@@ -52,7 +52,7 @@ textarea {
 header {
     height: 100vh;
     min-height: 985px;
-    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.3)) ,url('./img/bg.jpg')center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,.95),rgba(0,0,0,.95)) ,url('./img/bg.jpg')center center/cover no-repeat;
     display: flex;
     flex-direction: column;
     color: var(--font-primary-color);

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <script src="https://kit.fontawesome.com/bc3d8292c6.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/bc3d8292c6.js" crossorigin="anonymous"></script>
+    <script defer src="./formValidate.js"></script>
     <title>Fabian Carrillo</title>
 </head>
 
@@ -135,17 +136,18 @@
                     </article>
                     <article id="contact-banner-form">
                         <h3>Contact me</h3>
-                        <form action="">
+                        <form action="https://formsubmit.co/ulises.fab@outlook.com" method="POST" id="contact-form">
                             <div class="input-field">
-                                <input type="text" id="name" placeholder="Name">
+                                <input type="text" id="name" placeholder="Name" required>
+                                <input type="hidden" name="_subject" value="New email from github page!">
                             </div>
                             <div class="input-field">
-                                <input type="text" id="email" placeholder="Email">
+                                <input type="email" id="email" placeholder="Email" required>
                             </div>
                             <div class="input-field">
                                 <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
                             </div>
-                            <button type="button">send</button>
+                            <button type="submit">send</button>
                         </form>
                     </article>
                 </div>
@@ -156,5 +158,19 @@
         <p>Copyright &copy; Fabian Carrillo.</p>
     </footer>
     <!-- End of footer -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+    </script>
 </body>
 </html>
