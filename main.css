@@ -228,6 +228,9 @@ nav ul a:hover {
         display: flex!important;
         flex-wrap: wrap;
         justify-content: center;
+        transform: translateX(0)!important;
+        transition: none;
+        background-color: transparent;
     }
     .banner h1{
         margin-bottom: 30px;
