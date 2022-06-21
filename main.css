@@ -5,7 +5,6 @@
     --font-secondary-color: #ede4de;
     --font-sm-size: 1.3rem;
 }
-/*  */
 * {
     margin: 0;
     padding: 0;
@@ -44,10 +43,11 @@ textarea {
     height: 2px;
     width: 30px;
     margin: 6px;
+    transition: all 1.3s ease;
 /* End of default styles */
 }
 .toggle-nav {
-    display: none;
+    transform: translateX(0);
 }
 /* Start of page styles */
 /* Start of header styles */
@@ -83,13 +83,14 @@ nav {
 .btn:hover {
     cursor: pointer;
 }
-.active .bar:nth-child(2){
+
+.toggle .bar2{
     opacity: 0;
 }
-.active .bar:nth-child(1){
+.toggle .bar1{
     transform: translateY(8px) rotate(45deg);
 }
-.active .bar:nth-child(3){
+.toggle .bar3{
     transform: translateY(-8px) rotate(-45deg);
 }
 
@@ -97,6 +98,8 @@ nav {
 nav ul {
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.9));
     list-style-type: none;
+    transform: translateX(1000px);
+    transition: all 2s ease;
 }
 nav ul a {
     display: block;
