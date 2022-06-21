@@ -46,7 +46,9 @@ textarea {
     margin: 6px;
 /* End of default styles */
 }
-
+.toggle-nav {
+    display: none;
+}
 /* Start of page styles */
 /* Start of header styles */
 header {
@@ -60,7 +62,7 @@ header {
     /* start of nav styles */
 nav {
     flex: 0 0 auto;
-    /*    position: fixed;*/
+    position: fixed;
     width: 100%;
     z-index: 10;
 }
@@ -81,10 +83,20 @@ nav {
 .btn:hover {
     cursor: pointer;
 }
+.active .bar:nth-child(2){
+    opacity: 0;
+}
+.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
         /* Start of nav link styles */
 nav ul {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.9));
     list-style-type: none;
-    display: none;
 }
 nav ul a {
     display: block;
@@ -113,6 +125,7 @@ nav ul a:hover::before {
 nav ul a:hover {
     padding-left: 3.5rem;
     background: rgba(255, 255, 255,.1);
+    color: red;
 }
         /* End of nav link styles */
     /* End of nav styles */
@@ -122,7 +135,8 @@ nav ul a:hover {
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;
+    margin-top: -40rem;
 }
 .banner h1 {
     font-size: 4.3rem;
