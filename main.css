@@ -10,6 +10,10 @@
     padding: 0;
     box-sizing: inherit;
 }
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+  }
     /*html defaults    */
 html {
     overflow-x: hidden;

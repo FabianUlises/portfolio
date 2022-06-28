@@ -1,5 +1,15 @@
 const primaryNav = document.querySelector('.primary-nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
+
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper");
+  }, 400);
+});
+
 navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('toggle');
     const visibility = primaryNav.getAttribute('data-visible');
