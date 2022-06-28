@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <script defer src="https://kit.fontawesome.com/bc3d8292c6.js" crossorigin="anonymous"></script>
-    <script defer src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/bc3d8292c6.js" crossorigin="anonymous" defer></script>
+    <script src="./app.js" defer></script>
     <title>Fabian Carrillo</title>
 </head>
 
@@ -18,7 +18,8 @@
             <div class="nav-container">
                 <!-- Start of nav logo -->
                 <!-- Start of nav btn container -->
-                <div class="btn">
+                <div class="btn mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                   <span class="sr-only">Menu</span>
                     <!-- Three nav bars -->
                     <div class="bar bar1"></div>
                     <div class="bar bar2"></div>
@@ -28,7 +29,7 @@
             </div>
             <!-- End of nav container -->
             <!-- Start of nav links -->
-            <ul class="nav-menu">
+            <ul data-visible="false" class="primary-nav nav-menu">
                 <li>
                     <a href="#banner">Home</a>
                 </li>                

@@ -22,6 +22,9 @@ body {
     font-size: 2.6rem;
     font-family: 'Arimo', sans-serif;
 }
+.sr-only {
+    display: none;
+}
     /* anchor defaults */
 a {
     text-decoration: none;
@@ -36,6 +39,9 @@ a:active {
 textarea {
     resize: none;
 }
+.flex {
+    display: flex;
+}
 
     /* burger menu bars*/
 .bar {
@@ -43,11 +49,18 @@ textarea {
     height: 2px;
     width: 30px;
     margin: 6px;
-    transition: all 1.3s ease;
+    transition: all 250ms ease;
 /* End of default styles */
 }
-.toggle-nav {
-    transform: translateX(0);
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 /* Start of page styles */
 /* Start of header styles */
@@ -78,6 +91,7 @@ nav {
     display: inline-block;
     align-self: center;
     border: 2px solid var(--font-primary-color);
+    z-index: 9999;
 }
         /* burger menu hover state */
 .btn:hover {
@@ -96,11 +110,14 @@ nav {
 
         /* Start of nav link styles */
 nav ul {
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.9));
     list-style-type: none;
-    transform: translateX(1000px);
-    transition: all 2s ease;
 }
+@supports (backdrop-filter: blur(1rem)){
+    .primary-nav {
+        backdrop-filter: blur(1rem);
+    }    
+}
+
 nav ul a {
     display: block;
     padding: 20px;
@@ -130,7 +147,7 @@ nav ul a:hover {
     background: rgba(255, 255, 255,.1);
     color: red;
 }
-        /* End of nav link styles */
+
     /* End of nav styles */
     /* Start of banner styles */
 .banner {
@@ -219,18 +236,38 @@ nav ul a:hover {
     }
 }
     /* End of banner styles */
+
+@media screen and (max-width: 776px) {
+    .primary-nav {
+        gap: 1rem;
+        position: fixed;
+        inset: 0 0 0 50%;
+        flex-direction: column;
+/*        padding: min(30vh, 10vh) 2em;*/
+        padding: 10rem 0 0 0;
+        z-index: 1000;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        font-size: 14px;
+        transform: translateX(100%);
+        transition: 350ms ease;
+    }
+    .primary-nav[data-visible="true"]  {
+        transform: translateX(0%);
+    }
+}
+
 /* Media queries */
 @media screen and (min-width:776px){
     .nav-container{
         display: none;
     }
-    nav ul{
-        display: flex!important;
-        flex-wrap: wrap;
-        justify-content: center;
-        transform: translateX(0)!important;
-        transition: none;
-        background-color: transparent;
+    .primary-nav{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        align-items: center;
+        
     }
     .banner h1{
         margin-bottom: 30px;
@@ -239,6 +276,24 @@ nav ul a:hover {
         padding-left: 2rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* End of header styles */
 /* Start of skills section styles */
