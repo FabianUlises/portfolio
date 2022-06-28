@@ -14,22 +14,13 @@
     animation: none !important;
     transition: none !important;
   }
-    /*html defaults    */
-html {
-    overflow-x: hidden;
-    box-sizing: border-box;
-    font-size: 62.5%;
-    background-color: black;
-}
-    /* page defaults */
-body {
-    font-size: 2.6rem;
-    font-family: 'Arimo', sans-serif;
-}
 .sr-only {
     display: none;
 }
-    /* anchor defaults */
+
+ul {
+    list-style-type: none;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -43,10 +34,6 @@ a:active {
 textarea {
     resize: none;
 }
-.flex {
-    display: flex;
-}
-
     /* burger menu bars*/
 .bar {
     background-color: var(--font-primary-color);
@@ -54,8 +41,27 @@ textarea {
     width: 30px;
     margin: 6px;
     transition: all 250ms ease;
-/* End of default styles */
 }
+.flex {
+    display: flex;
+}
+
+    /*  html defaults    */
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: black;
+}
+    /* page defaults */
+body {
+    font-size: 2.6rem;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/* End of default styles */
+/* Keyframes */
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -66,13 +72,46 @@ textarea {
         transform: translateX(0px);
     }
 }
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50% {
+
+    }
+    100% {
+    }
+}
 /* Start of page styles */
-/* Start of header styles */
 header {
     height: 100vh;
     min-height: 985px;
     background: linear-gradient(rgba(0,0,0,.95),rgba(0,0,0,.95)) ,url('./img/bg.jpg')center center/cover no-repeat;
-    display: flex;
     flex-direction: column;
     color: var(--font-primary-color);
 }
@@ -86,8 +125,13 @@ nav {
         /* nav container for mobile */
 .nav-container {
     padding: 20px;
-    display: flex;
     justify-content: flex-end;
+    display: none;
+}
+.primary-nav {
+    justify-content: flex-end;
+    padding: 1rem;
+    align-items: center;
 }
         /* mobile burger menu */
 .btn {
@@ -113,9 +157,6 @@ nav {
 }
 
         /* Start of nav link styles */
-nav ul {
-    list-style-type: none;
-}
 @supports (backdrop-filter: blur(1rem)){
     .primary-nav {
         backdrop-filter: blur(1rem);
@@ -147,15 +188,70 @@ nav ul a:hover::before {
     height: 3px;
 }
 nav ul a:hover {
-    padding-left: 3.5rem;
     background: rgba(255, 255, 255,.1);
     color: red;
 }
 
+
+@media screen and (max-width: 776px) {
+    .nav-container{
+        display: flex;
+    }
+    .primary-nav {
+        display: block;
+        gap: 1rem;
+        position: fixed !important;
+        inset: 0 0 0 50%;
+        /* flex-direction: column; */
+/*        padding: min(30vh, 10vh) 2em;*/
+        padding: 10rem 0 0 0;
+        z-index: 1000;
+        letter-spacing: 1px;
+        font-size: 14px;
+        transform: translateX(100%);
+        transition: 350ms ease;
+    }
+    .primary-nav[data-visible="true"]  {
+        transform: translateX(0%);
+    }
+    nav ul a:hover {
+        padding-left: 3rem;
+    }
+}
     /* End of nav styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
     /* Start of banner styles */
 .banner {
-    display: flex;
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
@@ -167,23 +263,13 @@ nav ul a:hover {
     text-transform: uppercase;
     font-weight: 100;
     color: var(--font-secondary-color);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     animation: fadeIn 2s ease;
     font-family: 'Rock Salt', cursive;
     font-weight: bold;
     animation: dropDown 2s ease;
 }
-@keyframes dropDown {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    50% {
 
-    }
-    100% {
-    }
-}
 #banner-link {
     color: var(--font-secondary-color);
     display: inline-block;
@@ -203,7 +289,6 @@ nav ul a:hover {
     width: 50%;
     margin: auto;
     font-size: 3rem;
-    display: flex;
     justify-content: space-around;
 }
 .banner-icons a {
@@ -215,71 +300,9 @@ nav ul a:hover {
     color: var(--font-secondary-color);
     transform: translateY(-10px);
 }
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    
-    }
-    25% {
-        opacity: 0;
-    }
-    50% {
-        
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
+
     /* End of banner styles */
 
-@media screen and (max-width: 776px) {
-    .primary-nav {
-        gap: 1rem;
-        position: fixed;
-        inset: 0 0 0 50%;
-        flex-direction: column;
-/*        padding: min(30vh, 10vh) 2em;*/
-        padding: 10rem 0 0 0;
-        z-index: 1000;
-        letter-spacing: 1px;
-        font-family: sans-serif;
-        font-size: 14px;
-        transform: translateX(100%);
-        transition: 350ms ease;
-    }
-    .primary-nav[data-visible="true"]  {
-        transform: translateX(0%);
-    }
-}
-
-/* Media queries */
-@media screen and (min-width:776px){
-    .nav-container{
-        display: none;
-    }
-    .primary-nav{
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem;
-        align-items: center;
-        
-    }
-    .banner h1{
-        margin-bottom: 30px;
-    }
-    nav ul a:hover {
-        padding-left: 2rem;
-    }
-}
 
 
 
@@ -296,17 +319,12 @@ nav ul a:hover {
 
 
 
-
-
-
-/* End of header styles */
 /* Start of skills section styles */
 .skills {
     min-height: 80vh;
     background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url('img/filler.jpg')center/cover fixed no-repeat;
     color: var(--font-secondary-color);
     padding: 10rem 4rem;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
