@@ -1,6 +1,6 @@
 const primaryNav = document.querySelector('.primary-nav');
 const navToggle = document.querySelector('.mobile-nav-toggle');
-
+const links = document.querySelectorAll('.nav-link');
 let resizeTimer;
 window.addEventListener("resize", () => {
   document.body.classList.add("resize-animation-stopper");
@@ -21,4 +21,9 @@ navToggle.addEventListener('click', () => {
         primaryNav.setAttribute('data-visible', false)
         navToggle.setAttribute('aria-expanded', false)
     }
+})
+links.forEach(el => {
+  el.addEventListener('click', (e) => {
+      primaryNav.setAttribute('data-visible', false)
+  })
 })
