@@ -25,5 +25,6 @@ navToggle.addEventListener('click', () => {
 links.forEach(el => {
   el.addEventListener('click', (e) => {
       primaryNav.setAttribute('data-visible', false)
+      navToggle.classList.toggle('toggle');
   })
 })
