@@ -343,16 +343,25 @@ nav ul a:hover {
 .projects-section {
     min-height: 30vh;
     color: white;
-    padding: .8rem;
+    padding: 1.8rem .8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 75%;
+    margin: 0 auto;
 }
 .projects-section h2 {
     font-family: 'Rock Salt', cursive;
     margin-bottom: 2.6rem;
     align-self: center;
+    border-bottom: 1px solid whitesmoke;
+}
+.projects-section a {
+    transition: all 250ms ease;
+}
+.projects-section a:hover {
+    color: whitesmoke;
 }
 .project {
     color: rebeccapurple;
@@ -366,6 +375,9 @@ nav ul a:hover {
     transition: all 250ms ease;
     gap: 1.8rem;
     padding: 1.4rem .8rem;
+}
+.project h3{
+    font-family: 'Rock Salt';
 }
 
 /* End of projects section */
