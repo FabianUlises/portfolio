@@ -339,6 +339,35 @@ nav ul a:hover {
     grid-row-gap: 3.3rem;
 }
 /* End of skills section */
+/* Start of projects section */
+.projects-section {
+    min-height: 30vh;
+    color: white;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-section h2 {
+    font-family: 'Rock Salt', cursive;
+    margin-bottom: 2.6rem;
+    align-self: center;
+}
+.project {
+    color: rebeccapurple;
+    align-self: flex-start;
+    max-width: 32rem;
+    height: 16rem;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 250ms ease;
+}
+
+/* End of projects section */
 /* Start of contact section styles */
 #contact-banner {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('./img/contact.jpg')center center/cover no-repeat;
