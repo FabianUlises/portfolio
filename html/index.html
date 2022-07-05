@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/bc3d8292c6.js" crossorigin="anonymous" defer></script>
+    <script src="./app.js" defer></script>
+    <title>Fabian Carrillo</title>
+</head>
+
+<body>
+    <!-- Start of page header -->
+    <header class="header-section flex">
+        <!-- Start of nav -->
+        <nav>
+            <!-- Start of nav container -->
+            <div class="nav-container flex">
+                <!-- Start of nav logo -->
+                <!-- Start of nav btn container -->
+                <div class="btn mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                   <span class="sr-only">Menu</span>
+                    <!-- Three nav bars -->
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            <!-- End of nav btn container -->
+            </div>
+            <!-- End of nav container -->
+            <!-- Start of nav links -->
+            <ul data-visible="false" class="primary-nav nav-menu flex">
+                <li class="nav-link">
+                    <a href="#banner">Home</a>
+                </li>                
+                <li class="nav-link">
+                    <a href="#skills">Services</a>    
+                </li>
+                <li class="nav-link">
+                    <a href="#contact">Contact</a>
+                </li>
+                <li class="nav-link">
+                    <a href="#projects">Projects</a>
+                </li>
+            </ul>
+        <!-- End of nav links -->
+        </nav>
+        <!-- End of nav -->        
+        <section class="banner flex" id="banner">
+            <div class="banner-center">
+                <h1>Full-Stack <br /> Dev</h1>
+                <a href="#contact" id="banner-link">Lets start building!</a>
+                <div class="banner-icons flex">
+                    <a target="_blank" href="https://www.linkedin.com/in/ulises-carrillo/"><i class="fa brands fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/FabianUlises"><i class="fa brands fa-github"></i></a>
+                    <a href="#header-section"><i class="fa brands fa-twitch"></i></a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!--End of page header  -->
+
+
+
+    <!-- Start of skills section -->
+    <section class="skills flex" id="skills">
+        <div class="skills-center">
+            <!--SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <!-- <i class="fab brands fa-react"></i> -->
+                    <img src="./img/react.png" height="100px" alt="reactjs">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/nodejs.png" height="100px" alt="nodejs">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/html5.png" height="100px" alt="html5">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/css.png" height="100px" alt="css3">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/js.png" height="100px" alt="javascript">                
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/python.png" height="100px" alt="python">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/mongodb.png" height="35px" alt="mongodb">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/postgresql.png" height="100px" alt="postgresql">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <img src="./img/expressjs.png" height="35px" alt="expressjs">
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+            <article class="skill">
+                <div class="skill-icon">
+                    <p id="skill-restful">RESTful APIs</p>
+                </div>
+            </article>
+            <!--END OF SKILL ITEM-->
+        </div>
+    </section>
+    <!-- End of skills section -->
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <a href="https://sandboxbreadcrud.herokuapp.com/" class="project">
+            <div class="project-center">
+                <p>Visit my BreadCrud App using server-side rendering for dynamic CRUD operations.</p>
+            </div>
+        </a>
+    </section>
+    <!-- Start of contact section -->
+    <section id="contact-banner">
+        <div class="contact-banner-center" id="contact">
+            <article id="contact-banner-info">
+                <img src="./img/me.jpg" alt="Fabian Carrillo">
+                <!--<i class="fas fa-user"></i>-->
+                <h2>Fabian U. Carrillo</h2>
+                <p>Hey! I'm a bi-lingual web developer from Los Angeles California. Feel free to contact me in regards to your project.</p>
+                <p>You can reach me via github or Linkedin!</p>
+            </article>
+        </div>
+    </section> 
+    <!-- End of contact section -->
+    <!-- Start of footer -->
+    <footer>
+        <p>Copyright &copy; Fabian Carrillo.</p>
+    </footer>
+    <!-- End of footer -->
+</body>
+</html>
