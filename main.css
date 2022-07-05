@@ -357,14 +357,15 @@ nav ul a:hover {
 .project {
     color: rebeccapurple;
     align-self: flex-start;
-    max-width: 32rem;
-    height: 16rem;
+    max-width: 300px;
     font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     transition: all 250ms ease;
+    gap: 1.8rem;
+    padding: 1.4rem .8rem;
 }
 
 /* End of projects section */
