@@ -52,6 +52,8 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: black;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
     /* page defaults */
 body {
@@ -59,7 +61,9 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
-
+section {
+    scroll-snap-align: center;
+}
 /* End of default styles */
 /* Keyframes */
 @keyframes navLinkFade {
@@ -106,6 +110,9 @@ body {
     }
     100% {
     }
+}
+.container {
+
 }
 /* Start of page styles */
 header {
