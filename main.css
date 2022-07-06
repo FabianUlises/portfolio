@@ -300,7 +300,7 @@ nav ul a:hover {
 }
 .banner-icons a {
     display: inline-block;
-    transition: all 1s ease;
+    transition: all 250ms ease;
     animation: fadeIn 5s ease;
 }
 .banner-icons a:hover {
@@ -350,7 +350,7 @@ nav ul a:hover {
 .projects-section {
     min-height: 30vh;
     color: white;
-    padding: 1.8rem .8rem;
+    padding: 2.4rem .8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,7 +381,8 @@ nav ul a:hover {
     text-align: center;
     transition: all 250ms ease;
     gap: 1.8rem;
-    padding: 1.4rem .8rem;
+    padding: 2.4rem .8rem;
+    border-bottom: 2px solid white;
 }
 .project h3{
     font-family: 'Rock Salt';
@@ -404,6 +405,7 @@ nav ul a:hover {
 }
 .contact-banner-center h2{
     padding: 1.3rem;
+    font-family: 'Rock Salt'
 }
 .contact-banner-center p {
     letter-spacing: 1px;
@@ -492,5 +494,30 @@ footer {
     color: var(--font-secondary-color);
     font-size: var(--font-sm-size);
     text-align: right;
+    padding: 4rem 0;
+}
+.footer-content {
+    max-width: 32rem;
+    margin: 0 auto
+}
+footer .banner-icons, .footer-text {
+    padding: 2.4rem;
+}
+.footer-icons {
+    width: 50%;
+    margin: auto;
+    font-size: 3rem;
+    justify-content: space-around;
+    transition: all 250ms ease;
+}
+.footer-icons a:hover {
+    color: rebeccapurple;
+    transform: translateY(-10px);
+}
+.footer-text {
+    text-align: center
+}
+footer span {
+    color: gray;
 }
 /* End of footer styles */
