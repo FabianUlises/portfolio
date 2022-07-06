@@ -23,18 +23,17 @@ ul {
 }
 a {
     text-decoration: none;
-    color: inherit;
 }
-a:hover{
-    color: inherit;
-}
-a:active {
+a, a:hover, a:active {
     color: inherit;
 }
 textarea {
     resize: none;
 }
-    /* burger menu bars*/
+h2 {
+    font-family: 'Rock Salt', cursive;
+}
+/* burger menu bars*/
 .bar {
     background-color: var(--font-primary-color);
     height: 2px;
@@ -45,17 +44,20 @@ textarea {
 .flex {
     display: flex;
 }
-
-    /*  html defaults    */
+.wrapper {
+    max-width: 75%;
+    margin: 0 auto
+}
+/*  html defaults    */
 html {
     overflow-x: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: #18181b;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
-    /* page defaults */
+/* page defaults */
 body {
     font-size: 2.6rem;
     font-family: 'Arimo', sans-serif;
@@ -63,6 +65,10 @@ body {
 
 section {
     scroll-snap-align: center;
+    padding: 10rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* End of default styles */
 /* Keyframes */
@@ -111,38 +117,39 @@ section {
     100% {
     }
 }
-.container {
 
-}
+
+
+
+
+
 /* Start of page styles */
+/*Header section*/
 header {
     height: 100vh;
-    min-height: 985px;
     background: linear-gradient(rgba(0,0,0,.95),rgba(0,0,0,.95)) ,url('./img/bg.jpg')center center/cover no-repeat;
-    flex-direction: column;
     color: var(--font-primary-color);
 }
-    /* start of nav styles */
+/* start of nav styles */
 nav {
     flex: 0 0 auto;
     position: fixed;
     width: 100%;
     z-index: 10;
 }
-        /* nav container for mobile */
+/* nav container for mobile */
 .nav-container {
-    padding: 20px;
+    padding: 2rem;
     justify-content: flex-end;
     display: none;
 }
 .primary-nav {
     justify-content: flex-end;
-    padding: 1rem;
     align-items: center;
 }
-        /* mobile burger menu */
+/* mobile burger menu */
 .btn {
-    padding: 4px;
+    padding: .4rem;
     display: inline-block;
     align-self: center;
     border: 2px solid var(--font-primary-color);
@@ -172,7 +179,7 @@ nav {
 
 nav ul a {
     display: block;
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
     font-size: 2rem;
     text-decoration: none;
@@ -202,12 +209,11 @@ nav ul a:hover {
 
 @media screen and (max-width: 776px) {
     .nav-container{
-        display: flex;
+        display: flex!important;
     }
     .primary-nav {
         display: block;
-        gap: 1rem;
-        position: fixed !important;
+        position: fixed;
         inset: 0 0 0 50%;
         /* flex-direction: column; */
 /*        padding: min(30vh, 10vh) 2em;*/
@@ -225,54 +231,24 @@ nav ul a:hover {
         padding-left: 3rem;
     }
 }
-    /* End of nav styles */
+/* End of nav styles */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    /* Start of banner styles */
+/* Start of banner styles */
 .banner {
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: -20rem;
 }
 .banner h1 {
+    font-family: 'Rock Salt', cursive;
     font-size: 4.3rem;
     text-transform: uppercase;
     font-weight: 100;
     color: var(--font-secondary-color);
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
     animation: fadeIn 2s ease;
-    font-family: 'Rock Salt', cursive;
     font-weight: bold;
     animation: dropDown 2s ease;
 }
@@ -281,9 +257,9 @@ nav ul a:hover {
     color: var(--font-secondary-color);
     display: inline-block;
     width: 75%;
-    margin: 0 auto 30px;
+    margin-bottom: 2rem;
     transition: all .5s ease;
-    animation: moveInLeft 4s ease;
+    animation: moveInLeft 2.5s ease;
 }
 #banner-link:hover {
     color: var(--font-primary-color);
@@ -328,41 +304,35 @@ nav ul a:hover {
 
 /* Start of skills section styles */
 .skills {
-    min-height: 80vh;
     background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url('img/filler.jpg')center/cover fixed no-repeat;
     color: var(--font-secondary-color);
-    padding: 10rem 4rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .skills-center {
-    width: 85%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     align-items: center;
-    justify-content: center;
-    grid-row-gap: 3.3rem;
+    grid-row-gap: 3.2rem;
 }
 /* End of skills section */
 /* Start of projects section */
 .projects-section {
-    min-height: 30vh;
     color: white;
-    padding: 2.4rem .8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 75%;
-    margin: 0 auto;
 }
 .projects-section h2 {
-    font-family: 'Rock Salt', cursive;
-    margin-bottom: 2.6rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
     align-self: center;
     border-bottom: 1px solid whitesmoke;
+}
+.projects-center {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .projects-section a {
     transition: all 250ms ease;
@@ -375,7 +345,6 @@ nav ul a:hover {
     align-self: flex-start;
     max-width: 300px;
     font-size: 1.8rem;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -387,21 +356,35 @@ nav ul a:hover {
 .project h3{
     font-family: 'Rock Salt';
 }
-
 /* End of projects section */
+
+
+
+
+
+
+
+
+
+
 /* Start of contact section styles */
 #contact-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('./img/contact.jpg')center center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('./img/contact.jpg')fixed center/cover no-repeat;
     color: var(--font-secondary-color);
     font-size: 1.7rem;
 }
 .contact-banner-center {
-    width: 100%;
-    padding: 8rem 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
     grid-row-gap: 3rem;
     text-align: center;
+}
+#contact-banner-info img {
+    height: 200px;
+    border-radius: 50%;
+}
+.user-details {
+    text-align: left;
 }
 .contact-banner-center h2{
     padding: 1.3rem;
@@ -409,86 +392,118 @@ nav ul a:hover {
 }
 .contact-banner-center p {
     letter-spacing: 1px;
-    max-width: 75%;
-    margin: 0 auto;
+    line-height: 3.2rem
 }
 #contact-banner-info {
-    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    margin-bottom: 2rem;
 }
-#contact-banner-form h3 {
-    font-weight: lighter;
-    padding: 1.3rem;
-    font-family: 'Rock Salt';
+#contact-banner h2 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    color: rebeccapurple;
 }
-#contact-banner-form input {
-    padding: .3rem .2rem;
+.user-about {
+    margin-bottom: 4rem;
 }
-
-#contact-banner-form .input-field{
+.user-resume a {
+    display: inline-block;
+    background-color: rebeccapurple;
+    padding: 1.2rem 2rem;
+    border-radius: 6px;
+}
+.user-resume a:hover {
+    background-color: gray;
+}
+#contact-banner-form {
+    background-color: #18181b;
+    border-radius: 16px;
     display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    justify-self: center;
+    align-self: center;
+    padding: 4rem;
+}
+#contact-banner-form h2{
+    padding: 0;
+}
+.contact-form {
+    flex-direction: column;
     justify-content: center;
-    margin: 20px 0;
+    align-items: center;
 }
-#contact-banner-form input{
+.contact-form .form-group {
+    
+    font-size: 2.4rem;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 2.4rem;
+    margin-bottom: 2rem;
+} 
+.form-group input {
+    padding: .8rem 1rem;
     font-family: inherit;
-    color: purple;
+    color: rebeccapurple;
     border: none;
     border-radius: 8px;
 }
-#contact-banner-form input:focus {
+.form-group input:focus {
     outline: none;
 }
-#contact-banner-form textarea {
-    border: none;
-    font-family: inherit;
-    padding: .2rem .4rem;
-    border-radius: 8px;
-}
-#contact-banner-form textarea:focus {
-    outline: none;
-}
-#contact-banner-form button{
+.contact-form button {
     display: inline-block;
     font-size: 20px;
-    padding: 5px 10px;
-    text-transform: uppercase;
+    width: 100%;
+    padding: 1.2rem 2rem;
     border-radius: 10px;
-    background-color: purple;
+    background-color: rebeccapurple;
     border: none;
+    color: whitesmoke;
 }
-#contact-banner-form button:hover {
+.contact-form button:hover {
     cursor: pointer;
+    background-color: gray;
 }
-#contact-banner-form button:active{
-    background-color: darkviolet;
+.contact-form textarea {
+    border: none;
+    padding: .2rem .4rem;
+    border-radius: 8px;    
 }
-#contact-banner-info .fa-user{
-    border-radius: 50%;
-    font-size: 65px;
-    color:purple;
+.contact-form textarea:focus {
+    outline: none;
 }
-#contact-banner-info img {
-    height: 200px;
-}
-#contact-banner-form h2 {
-    color: red;
-    font-weight: bold;
-}
-/*
-@media screen and (min-width:796px) {
-    #contact-banner-info img {
+@media screen and (max-width: 776px) {
+    .contact-banner-center {
         display: block;
-        content: url("./img/me.jpg");
-        height: 200px;
-        border-radius: 15px;
-        margin: 0 auto 4rem;
     }
-    #contact-banner-info i {
-        display: none;
+    .contact-banner-center h2{
+    text-align: center;
+    }
+    #contact-banner-form {
+        margin: 0 auto;
+    }
+    #contact-banner h2{
+        margin-bottom: 0px;
+        padding: 0;
     }
 }
-*/
 /* End of contact section styles */
+
+
+
+
+
+
+
+
+
+
+
 /* Start of footer styles */
 footer {
     color: var(--font-secondary-color);
@@ -508,7 +523,9 @@ footer .banner-icons, .footer-text {
     margin: auto;
     font-size: 3rem;
     justify-content: space-around;
-    transition: all 250ms ease;
+}
+.footer-icons a {
+    transition: color 250ms ease, transform 250ms ease;
 }
 .footer-icons a:hover {
     color: rebeccapurple;
