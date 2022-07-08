@@ -311,6 +311,7 @@ nav ul a:hover {
     align-items: center;
 }
 .skills-center {
+    width: 100%;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
