@@ -33,6 +33,14 @@ textarea {
 h2 {
     font-family: 'Rock Salt', cursive;
 }
+.project-img {
+    height: 100%;
+    width: 100%;
+}
+.project img {
+    height: 100%;
+    width: 100%;
+}
 /* burger menu bars*/
 .bar {
     background-color: var(--font-primary-color);
@@ -59,13 +67,13 @@ html {
 }
 /* page defaults */
 body {
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     font-family: 'Arimo', sans-serif;
 }
 
 section {
     scroll-snap-align: center;
-    padding: 10rem 4rem;
+    padding: 10rem 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -241,6 +249,7 @@ nav ul a:hover {
     align-items: center;
     text-align: center;
 }
+
 .banner h1 {
     font-family: 'Rock Salt', cursive;
     font-size: 4.3rem;
@@ -260,6 +269,7 @@ nav ul a:hover {
     margin-bottom: 2rem;
     transition: all .5s ease;
     animation: moveInLeft 2.5s ease;
+    font-size: 2.4rem;
 }
 #banner-link:hover {
     color: var(--font-primary-color);
@@ -314,7 +324,7 @@ nav ul a:hover {
     width: 100%;
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     align-items: center;
     grid-row-gap: 3.2rem;
 }
@@ -328,12 +338,15 @@ nav ul a:hover {
     padding: 2rem;
     align-self: center;
     border-bottom: 1px solid whitesmoke;
+    font-size: 4.3rem;
 }
 .projects-center {
     width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    grid-row-gap: 12rem;
+    place-items: center;
 }
 .projects-section a {
     transition: all 250ms ease;
@@ -343,11 +356,11 @@ nav ul a:hover {
 }
 .project {
     color: rebeccapurple;
-    align-self: flex-start;
+    align-self: stretch;
     max-width: 300px;
     font-size: 1.8rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     transition: all 250ms ease;
     gap: 1.8rem;
@@ -407,8 +420,10 @@ nav ul a:hover {
 }
 .user-about {
     margin-bottom: 4rem;
+    text-align: center;
 }
 .user-resume a {
+    text-align: center;
     display: inline-block;
     background-color: rebeccapurple;
     padding: 1.2rem 2rem;
@@ -422,7 +437,8 @@ nav ul a:hover {
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    width: max-content;
+    inline-size: 100%;
+    max-inline-size: 600px;
     height: max-content;
     justify-self: center;
     align-self: center;
@@ -438,7 +454,6 @@ nav ul a:hover {
 }
 .contact-form .form-group {
     
-    font-size: 2.4rem;
     text-align: center;
     display: flex;
     width: 100%;
@@ -447,11 +462,15 @@ nav ul a:hover {
     margin-bottom: 2rem;
 } 
 .form-group input {
-    padding: .8rem 1rem;
-    font-family: inherit;
-    color: rebeccapurple;
-    border: none;
-    border-radius: 8px;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 250ms ease;
+    color:rebeccapurple;
 }
 .form-group input:focus {
     outline: none;
@@ -471,9 +490,12 @@ nav ul a:hover {
     background-color: gray;
 }
 .contact-form textarea {
-    border: none;
-    padding: .2rem .4rem;
-    border-radius: 8px;    
+    transition: all 250ms ease;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    padding: 1rem; 
 }
 .contact-form textarea:focus {
     outline: none;

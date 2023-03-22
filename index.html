@@ -138,7 +138,9 @@
         <div class="projects-center wrapper">
 
             <div class="project flex">
-                <img src="./img/breadcrud.png" alt="breadcrud">
+                <div class="project-img">
+                    <img src="./img/projects/breadcrud.jpg" alt="breadcrud">
+                </div>
                 <a target="_blank" href="https://sandboxbreadcrud.herokuapp.com/">
                     <h3>BreadCrud</h3>
                 </a>    
@@ -147,6 +149,34 @@
                 </div>
                 <div class="github">
                     <a target="_blank" href="https://github.com/FabianUlises/breadcrud"><i class="fa brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project flex">
+                <div class="project-img">
+                    <img src="./img/projects/rest-rant.jpg" alt="restaurant rating site" />
+                </div>
+                <a target="_blank" href="https://sandboxrestrant.herokuapp.com/">
+                    <h3>Rest Rant</h3>
+                </a>    
+                <div class="project-center">
+                    <p>Rest-Rant is a site I created using MERN stack</p>
+                </div>
+                <div class="github">
+                    <a target="_blank" href="https://github.com/FabianUlises/Rest-Rant.git"><i class="fa brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="project flex">
+                <div class="project-img">
+                    <img src="./img/projects/dicegame.jpg" alt="dicegame" />
+                </div>
+                <a target="_blank" href="https://fabianulises.github.io/Milestone-Project/">
+                    <h3>Dice Game</h3>
+                </a>    
+                <div class="project-center">
+                    <p>Visit a game I created using Javascript HTML & CSS</p>
+                </div>
+                <div class="github">
+                    <a target="_blank" href="https://github.com/FabianUlises/Milestone-Project.git"><i class="fa brands fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -173,25 +203,19 @@
             </article>
             <article id="contact-banner-form">
                <h2>Contact me</h2>
-                <form action="" class="contact-form flex">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text">
-                    </div>
-                    <div class="form-group">
-                        <label for="Message">Message</label>
-                        <textarea name="message" id="form-msg" cols="23" rows="10"></textarea>
-                    </div>
-                    <button>Submit</button>
-                </form>
+               <form action="https://formsubmit.co/ulises.fab@outlook.com" method='POST' class="contact-form flex" >
+                <div class="form-group">
+                    <input name='name' id='name' type="text" placeholder='Name' required/>
+                </div>
+                    <input type="hidden" name="_subject" value="New submission!" />
+                <div class="form-group">
+                    <input name='email' id='email' type="email" placeholder='Email' required/>
+                </div>
+                <div class="form-group">
+                    <textarea name='message' cols="23" rows="10" placeholder='Type your message' required></textarea>
+                </div>
+                <button type='submit' class='form-button'>Send</button>
+            </form>
             </article>
         </div>
     </section> 
