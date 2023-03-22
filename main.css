@@ -422,8 +422,10 @@ nav ul a:hover {
     margin-bottom: 4rem;
     text-align: center;
 }
-.user-resume a {
+.user-resume {
     text-align: center;
+}
+.user-resume a {
     display: inline-block;
     background-color: rebeccapurple;
     padding: 1.2rem 2rem;
