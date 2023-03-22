@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 /* Default Syles */
 :root {
-    --font-primary-color: #551a8b;
-    --font-secondary-color: #ede4de;
+    --surface-dark-400: hsl(210 10% 2%);
+    --surface-dark-50: hsla(210, 10%, 2%, 50%);
+    --font-light-100: hsl(210 10% 98%);
+    --font-dark-400: rebeccapurple;
     --font-sm-size: 1.3rem;
 }
 * {
@@ -29,6 +31,7 @@ a, a:hover, a:active {
 }
 textarea {
     resize: none;
+    color: var(--font-dark-400);
 }
 h2 {
     font-family: 'Rock Salt', cursive;
@@ -61,7 +64,7 @@ html {
     overflow-x: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
-    background-color: #18181b;
+    background-color: var(--surface-dark-400);
     scroll-behavior: smooth;
     /* scroll-snap-type: y mandatory; */
 }
@@ -136,7 +139,7 @@ section {
 header {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.95),rgba(0,0,0,.95)) ,url('./img/bg.jpg')center center/cover no-repeat;
-    color: var(--font-primary-color);
+    color: var(--font-light-100);
 }
 /* start of nav styles */
 nav {
@@ -196,7 +199,7 @@ nav ul a {
 }
 nav ul a::before {
     content: '';
-    background-color: rebeccapurple;
+    background-color: var(--font-dark-400);;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -211,7 +214,7 @@ nav ul a:hover::before {
 }
 nav ul a:hover {
     background: rgba(255, 255, 255,.1);
-    color: red;
+    color: var(--font-dark-400);
 }
 
 
@@ -255,7 +258,7 @@ nav ul a:hover {
     font-size: 4.3rem;
     text-transform: uppercase;
     font-weight: 100;
-    color: var(--font-secondary-color);
+    color: var(--font-light-100);
     margin-bottom: 2rem;
     animation: fadeIn 2s ease;
     font-weight: bold;
@@ -263,7 +266,7 @@ nav ul a:hover {
 }
 
 #banner-link {
-    color: var(--font-secondary-color);
+    color: var(--font-dark-400);
     display: inline-block;
     width: 75%;
     margin-bottom: 2rem;
@@ -272,7 +275,7 @@ nav ul a:hover {
     font-size: 2.4rem;
 }
 #banner-link:hover {
-    color: var(--font-primary-color);
+    color: var(--font-light-100);
     transform: scale(1.02);
 }
 #banner-link:active {
@@ -290,32 +293,15 @@ nav ul a:hover {
     animation: fadeIn 5s ease;
 }
 .banner-icons a:hover {
-    color: var(--font-secondary-color);
+    color: var(--font-dark-400);
     transform: translateY(-10px);
 }
 
     /* End of banner styles */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Start of skills section styles */
 .skills {
     background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0.5)), url('img/filler.jpg')center/cover fixed no-repeat;
-    color: var(--font-secondary-color);
+    color: var(--font-light-100);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -330,10 +316,8 @@ nav ul a:hover {
 }
 /* End of skills section */
 /* Start of projects section */
-.projects-section {
-    color: white;
-}
 .projects-section h2 {
+    color: var(--font-light-100);
     margin-bottom: 4rem;
     padding: 2rem;
     align-self: center;
@@ -348,14 +332,8 @@ nav ul a:hover {
     grid-row-gap: 12rem;
     place-items: center;
 }
-.projects-section a {
-    transition: all 250ms ease;
-}
-.projects-section a:hover {
-    color: whitesmoke;
-}
 .project {
-    color: rebeccapurple;
+    color: var(--font-dark-400);
     align-self: stretch;
     max-width: 300px;
     font-size: 1.8rem;
@@ -367,24 +345,26 @@ nav ul a:hover {
     padding: 2.4rem .8rem;
     border-bottom: 2px solid white;
 }
+.projects-section a {
+    transition: all 250ms ease;
+}
+
+.github a:hover {
+    color: var(--font-light-100);
+}
 .project h3{
     font-family: 'Rock Salt';
+    color: var(--font-light-100);
+    transition: all 250ms ease;
+}
+.project h3:hover {
+    transform: scale(1.125);
 }
 /* End of projects section */
-
-
-
-
-
-
-
-
-
-
 /* Start of contact section styles */
 #contact-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('./img/contact.jpg')fixed center/cover no-repeat;
-    color: var(--font-secondary-color);
+    background: linear-gradient(hsla(210, 10%, 5%, 95%), hsla(210, 10%, 2%, 98%)), url('./img/contact.jpg')fixed center/cover no-repeat;
+    color: var(--font-light-100);
     font-size: 1.7rem;
 }
 .contact-banner-center {
@@ -416,7 +396,7 @@ nav ul a:hover {
 #contact-banner h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
-    color: rebeccapurple;
+    color: var(--font-dark-400);
 }
 .user-about {
     margin-bottom: 4rem;
@@ -427,15 +407,16 @@ nav ul a:hover {
 }
 .user-resume a {
     display: inline-block;
-    background-color: rebeccapurple;
+    background-color: var(--font-dark-400);
     padding: 1.2rem 2rem;
     border-radius: 6px;
+    transition: background-color 250ms ease;
 }
 .user-resume a:hover {
-    background-color: gray;
+    background-color: rgba(102, 51, 153, 0.462);
 }
 #contact-banner-form {
-    background-color: #18181b;
+    background-color: var(--surface-dark-50);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -472,7 +453,7 @@ nav ul a:hover {
     padding-left: 15px;
     border-bottom-width: 2px;
     transition: all 250ms ease;
-    color:rebeccapurple;
+    color: var(--font-dark-400);
 }
 .form-group input:focus {
     outline: none;
@@ -483,13 +464,14 @@ nav ul a:hover {
     width: 100%;
     padding: 1.2rem 2rem;
     border-radius: 10px;
-    background-color: rebeccapurple;
+    background-color: var(--font-dark-400);
     border: none;
-    color: whitesmoke;
+    color: var(--font-light-100);
+    transition: background-color 250ms ease;
 }
 .contact-form button:hover {
     cursor: pointer;
-    background-color: gray;
+    background-color: rgba(102, 51, 153, 0.462);
 }
 .contact-form textarea {
     transition: all 250ms ease;
@@ -518,20 +500,9 @@ nav ul a:hover {
     }
 }
 /* End of contact section styles */
-
-
-
-
-
-
-
-
-
-
-
 /* Start of footer styles */
 footer {
-    color: var(--font-secondary-color);
+    color: var(--font-light-100);
     font-size: var(--font-sm-size);
     text-align: right;
     padding: 4rem 0;
@@ -553,7 +524,7 @@ footer .banner-icons, .footer-text {
     transition: color 250ms ease, transform 250ms ease;
 }
 .footer-icons a:hover {
-    color: rebeccapurple;
+    color: var(--font-dark-400);
     transform: translateY(-10px);
 }
 .footer-text {
