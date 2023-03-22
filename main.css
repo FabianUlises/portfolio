@@ -386,6 +386,7 @@ nav ul a:hover {
 #contact-banner-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    align-content: center;
     margin-bottom: 8rem;
 }
 #contact-banner h2 {
