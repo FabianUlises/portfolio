@@ -87,6 +87,7 @@ a, a:hover, a:active {
 textarea {
     resize: none;
     color: var(--font-dark-400);
+    font-family: inherit;;
 }
 h2 {
     font-family: 'Rock Salt', cursive;
@@ -377,11 +378,11 @@ nav ul a:hover {
 }
 .contact-banner-center h2{
     padding: 1.3rem;
-    font-family: 'Rock Salt'
+    font-family: 'Rock Salt';
 }
 .contact-banner-center p {
     letter-spacing: 1px;
-    line-height: 3.2rem
+    line-height: 3.2rem;
 }
 #contact-banner-info {
     display: grid;
