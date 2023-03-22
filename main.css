@@ -9,7 +9,7 @@
 }
 /* burger menu bars*/
 .bar {
-    background-color: var(--font-primary-color);
+    background-color: var(--font-light-100);
     height: 2px;
     width: 30px;
     margin: 6px;
@@ -339,7 +339,7 @@ nav ul a:hover {
     transition: all 250ms ease;
     gap: 1.8rem;
     padding: 2.4rem .8rem;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
 }
 .projects-section a {
     transition: all 250ms ease;
