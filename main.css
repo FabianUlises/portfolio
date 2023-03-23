@@ -356,6 +356,9 @@ nav ul a:hover {
 .project h3:hover {
     transform: scale(1.125);
 }
+.fa-github {
+    font-size: 2.4rem;
+}
 /* End of projects section */
 /* Start of contact section styles */
 #contact-banner {
