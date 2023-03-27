@@ -320,6 +320,75 @@ nav ul a:hover {
     border-bottom: 1px solid white;
     font-size: 4.3rem;
 }
+.projects_carousel {
+    background: rgba(126, 126, 126, 0.157);
+    inline-size: 100%;
+    min-block-size: 800px;
+    /* padding: 0 !important;
+    margin: 0 !important; */
+    position: relative;
+}
+
+.projects_container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-inline-start: 2rem;
+    margin-top: -8rem;
+    
+}
+.project {
+    background: darkgrey;
+    inline-size: 326px;
+    block-size: 296px;
+    border-radius: .8rem;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    /* display: inline-block; */
+
+}
+.project-body {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: .8rem;
+    gap: 2rem;
+}
+.project-info {
+    font-size: 14px;
+    line-height: 20px;
+}
+.project-img {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 .projects-center {
     width: 100%;
     display: grid;
@@ -339,8 +408,9 @@ nav ul a:hover {
     transition: all 250ms ease;
     gap: 1.8rem;
     padding: 2.4rem .8rem;
-    /* border-bottom: 2px solid white; */
+    border-bottom: 2px solid white; 
 }
+*/
 .projects-section a {
     transition: all 250ms ease;
 }
@@ -352,13 +422,14 @@ nav ul a:hover {
     font-family: 'Rock Salt';
     color: var(--font-light-100);
     transition: all 250ms ease;
+    font-size: 3rem;
 }
 .project h3:hover {
     transform: scale(1.125);
 }
 .fa-github {
     font-size: 2.4rem;
-}
+} */
 /* End of projects section */
 /* Start of contact section styles */
 #contact-banner {
