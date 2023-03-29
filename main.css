@@ -92,14 +92,6 @@ textarea {
 h2 {
     font-family: 'Rock Salt', cursive;
 }
-/* .project-img {
-    height: 100%;
-    width: 100%;
-} */
-.project img {
-    height: 100%;
-    width: 100%;
-}
 .flex {
     display: flex;
 }
@@ -312,6 +304,36 @@ nav ul a:hover {
 }
 /* End of skills section */
 /* Start of projects section */
+#projectsCarousel {
+    inline-size: 100%;
+    display: grid;
+    background: darkgray;
+    grid-auto-flow: column;
+    overflow-y: scroll;
+    /* grid-auto-columns: 10rem; */
+    gap: 2rem;
+    padding: 8rem 2rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.project {
+    background: orange;
+    /* block-size: 10rem; */
+    inline-size: 300px;
+}
+.project-img {
+    overflow: hidden;
+}
+.project-img img {
+    width: 100%;
+}
+
+
+
+
+
+/* 
 .projects-section h2 {
     color: var(--font-light-100);
     margin-bottom: 4rem;
@@ -322,13 +344,11 @@ nav ul a:hover {
 }
 .projects_carousel {
     background: rgba(126, 126, 126, 0.157);
-    inline-size: 100%;
-    min-block-size: 800px;
-    /* padding: 0 !important;
-    margin: 0 !important; */
-    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 20rem;
+    background-color: red;
 }
-
 .projects_container {
     height: 100%;
     width: 100%;
@@ -340,20 +360,19 @@ nav ul a:hover {
     align-items: center;
     padding-inline-start: 2rem;
     margin-top: -8rem;
-    
 }
+
 .project {
-    background: darkgrey;
     inline-size: 326px;
-    block-size: 296px;
+    height: 500px;
     border-radius: .8rem;
     display: grid;
     grid-template-rows: 1fr 2fr;
-    /* display: inline-block; */
+    color: var(--font-dark-400);
+    background: var(--surface-dark-400);
 
 }
 .project-body {
-    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,48 +388,6 @@ nav ul a:hover {
 .project-img {
     background-color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.projects-center {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 4rem;
-    grid-row-gap: 12rem;
-    place-items: center;
-}
-.project {
-    color: var(--font-dark-400);
-    align-self: stretch;
-    max-width: 300px;
-    font-size: 1.8rem;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    transition: all 250ms ease;
-    gap: 1.8rem;
-    padding: 2.4rem .8rem;
-    border-bottom: 2px solid white; 
-}
-*/
 .projects-section a {
     transition: all 250ms ease;
 }
@@ -422,14 +399,14 @@ nav ul a:hover {
     font-family: 'Rock Salt';
     color: var(--font-light-100);
     transition: all 250ms ease;
-    font-size: 3rem;
+    font-size: 2.4rem;
 }
 .project h3:hover {
     transform: scale(1.125);
 }
 .fa-github {
     font-size: 2.4rem;
-} */
+}  */
 /* End of projects section */
 /* Start of contact section styles */
 #contact-banner {
