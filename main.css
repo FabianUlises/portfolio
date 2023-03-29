@@ -4,7 +4,7 @@
     --surface-dark-400: hsl(210 10% 2%);
     --surface-dark-50: hsla(210, 10%, 2%, 50%);
     --font-light-100: hsl(210 10% 98%);
-    --font-dark-400: rebeccapurple;
+    --font-dark-400: rgb(142, 99, 186);
     --font-sm-size: 1.3rem;
 }
 /* burger menu bars*/
