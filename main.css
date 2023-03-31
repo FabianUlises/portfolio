@@ -290,7 +290,7 @@ nav ul a:hover {
 }
 .banner-icons a:hover {
     color: var(--font-dark-400);
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
     /* End of banner styles */
@@ -312,6 +312,10 @@ nav ul a:hover {
 }
 /* End of skills section */
 /* Start of projects section */
+#tic-tac-img {
+    height: 164px;
+    width: 164px;
+}
 .projects-section h2 {
     color: var(--font-light-100);
     margin-bottom: 4rem;
