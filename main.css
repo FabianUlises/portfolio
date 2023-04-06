@@ -124,6 +124,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Arimo', sans-serif;
+    padding: .8rem .4rem;
 }
 
 section {
@@ -145,7 +146,8 @@ header {
 nav {
     flex: 0 0 auto;
     position: fixed;
-    width: 100%;
+    right: 0;
+    max-inline-size: fit-content;
     z-index: 10;
 }
 /* nav container for mobile */
@@ -189,13 +191,19 @@ nav {
 }
 
 nav ul a {
-    display: block;
-    padding: 2rem;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 16px;
+    padding: 9px 23px;
+    display: inline-block;
     text-align: center;
-    font-size: 2rem;
+    vertical-align: middle;
+    border-radius: 4px;
     text-decoration: none;
-    transition: all 1s ease;
+    transition: padding 250ms ease;
     position: relative;
+
 }
 nav ul a::before {
     content: '';
@@ -205,6 +213,7 @@ nav ul a::before {
     left: 0;
     width: 0;
     height: 0;
+    border-radius: 4px;
     z-index: -10;
     transition: all 1s ease;
 }
