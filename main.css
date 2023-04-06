@@ -345,6 +345,19 @@ nav ul a:hover {
     padding: 2.4rem .8rem;
     /* border-bottom: 2px solid white; */
 }
+.project .teckstack-info {
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+.project p.techstack-react {
+    color: #00d8ff;
+}
+.project p.techstack-js {
+    color: #F0DB4F;
+}
+.project p.techstack-mern {
+    color: #68A063;
+}
 .projects-section a {
     transition: all 250ms ease;
 }
