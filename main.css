@@ -458,7 +458,7 @@ nav ul a:hover {
     transition: background-color 250ms ease;
 }
 .user-resume a:hover {
-    background-color: rgba(102, 51, 153, 0.762);
+    background-color:  hsla(270, 30%, 30%, 0.762);
 }
 #contact-banner-form {
     background-color: var(--surface-dark-50);
