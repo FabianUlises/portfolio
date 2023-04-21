@@ -231,21 +231,23 @@
                 </div>
             </article>
             <article id="contact-banner-form">
-               <h2>Contact me</h2>
-               <form action="https://formsubmit.co/ulises.fab@outlook.com" method='POST' class="contact-form flex" >
-                <div class="form-group">
-                    <input name='name' id='name' type="text" placeholder='Name' required/>
-                </div>
-                    <input type="hidden" name="_subject" value="New submission!" />
-                <div class="form-group">
-                    <input name='email' id='email' type="email" placeholder='Email' required/>
-                </div>
-                <div class="form-group">
-                    <textarea name='message' cols="23" rows="10" placeholder='Type your message' required></textarea>
-                </div>
-                <button type='submit' class='form-button'>Send</button>
-                <input type="hidden" name="_next" value="https://fabianulises.github.io/portfolio/">
-            </form>
+                <h2>Contact me</h2>
+                <form action="https://formsubmit.co/ulises.fab@outlook.com" method='POST' class="contact-form flex" >
+                    <div class="form-group">
+                        <input name='name' id='name' type="text" placeholder='' minlength="3" required/>
+                        <span>Name</span>
+                    </div>
+                        <input type="hidden" name="_subject" value="New submission!" />
+                    <div class="form-group">
+                        <input name='email' id='email' type="email" placeholder='' required/>
+                        <span>Email</span>
+                    </div>  
+                    <div class="form-group">
+                        <textarea name='message' cols="23" rows="10" placeholder='Type your message' required></textarea>
+                    </div>
+                    <button type='submit' class='form-button'>Send</button>
+                    <input type="hidden" name="_next" value="https://fabianulises.github.io/portfolio/">
+                </form>
             </article>
         </div>
     </section> 

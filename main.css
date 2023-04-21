@@ -87,10 +87,18 @@ a {
 a, a:hover, a:active {
     color: inherit;
 }
+input {
+    border: none;
+    outline: none;
+}
 textarea {
+    inline-size: 25rem;
     resize: none;
     color: var(--font-dark-400);
-    font-family: inherit;;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    padding: .8rem .4rem;
 }
 h2 {
     font-family: 'Rock Salt', cursive;
@@ -471,57 +479,90 @@ nav ul a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 .contact-form .form-group {
-    
-    text-align: center;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    gap: 2.4rem;
-    margin-bottom: 2rem;
-} 
+    position: relative;
+}
+.form-group span {
+    position: absolute;
+    left: 4px;
+    top: 13px;
+    color: rebeccapurple;
+    font-size: 1.25rem;
+    pointer-events: none;
+    text-transform: uppercase;
+    padding: .2rem;
+    border-left: 1px solid transparent;
+    border-radius: 2px;
+    transition: all 50ms ease;
+}
 .form-group input {
-    height: 45px;
-    width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: 3px solid var(--font-dark-400);
-    padding-left: 15px;
-    border-bottom-width: 2px;
-    transition: all 250ms ease;
-    color: var(--font-dark-400);
+    inline-size: 25rem;
+    font-size: 18px;
+    border-radius: 2px;
+    padding: .8rem .4rem;
+    border: 1.25px solid transparent;
 }
 .form-group input:focus {
-    outline: none;
-    border-color:white ;
+    border-color: rebeccapurple;
+}
+.form-group input:valid {
+    border-color: #68A063;
+}
+.form-group input:focus ~ span,
+.form-group input:valid ~ span {
+    background: whitesmoke;
+    font-size: .95rem;
+    top: -5px;
+    letter-spacing: 2px;
+}
+.form-group input:valid ~ span {
+    color: #68A063;
+    border-color: #68A063;
+}
+.form-group input:not(:placeholder-shown):invalid {
+    border-color: tomato;
+}
+.form-group input:not(:placeholder-shown):invalid ~ span {
+    top: -5px;
+    color: tomato;
+    background-color: whitesmoke;
+    font-size: .95rem;
+    letter-spacing: 2px;
+    border-radius: 2px;
+}
+.form-group input:not(:placeholder-shown):invalid ~ span::after {
+    content: '(NOT VALID)';
 }
 .contact-form button {
     display: inline-block;
-    font-size: 20px;
-    width: 100%;
-    padding: 1.2rem 2rem;
-    border-radius: 10px;
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 2px;
     background-color: rgba(102, 51, 153, 0.462);
     border: none;
     color: var(--font-light-100);
-    transition: background-color 250ms ease;
+    transition: all 50ms ease;
 }
 .contact-form button:hover {
     cursor: pointer;
-    background-color: rgba(102, 51, 153, 0.762);
+    background-color: hsla(270, 30%, 30%, 0.762);
 }
+.contact-form button:active {
+    transform: scale(.985);
+}
+
 .contact-form textarea {
     transition: all 250ms ease;
-    width: 100%;
-    outline: none;
-    border-radius: 5px;
-    border: 3px solid var(--font-dark-400);
-    padding: 1rem; 
+    border-radius: 2px;
+    border: 1.25px solid transparent;
 }
 .contact-form textarea:focus {
-    outline: none;
-    border-color: white;
+    border-color: rebeccapurple;
+}
+.contact-form textarea:valid {
+    border-color: #68A063;
 }
 @media screen and (max-width: 776px) {
     .contact-banner-center {
