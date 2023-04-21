@@ -329,14 +329,9 @@ nav ul a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     align-items: center;
-    grid-row-gap: 3.2rem;
 }
 /* End of skills section */
 /* Start of projects section */
-.project-img {
-    display: grid;
-    place-content: center;
-}
 #tic-tac-img {
     height: 164px;
     width: 164px;
@@ -353,8 +348,7 @@ nav ul a:hover {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 4rem;
-    grid-row-gap: 12rem;
+    grid-gap: 2rem;
     place-items: center;
 }
 .project {
